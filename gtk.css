@@ -1,42 +1,83 @@
-@define-color window_bg_color #181818;
-@define-color view_bg_color #181818;
-@define-color popover_bg_color #202020;
-@define-color dialog_bg_color #202020;
+@define-color window_bg_color #101010;
+@define-color view_bg_color #101010;
+@define-color popover_bg_color #191919;
+@define-color dialog_bg_color #191919;
 
-@define-color sidebar_bg_color #1f1f1f;
-@define-color secondary_sidebar_bg_color #1f1f1f;
+@define-color sidebar_bg_color #171717;
+@define-color secondary_sidebar_bg_color #171717;
 
-/* Keep inactive sidebars neutral instead of Adwaita's purple-gray backdrop. */
-@define-color sidebar_backdrop_color #1f1f1f;
-@define-color secondary_sidebar_backdrop_color #1f1f1f;
+@define-color sidebar_backdrop_color #171717;
+@define-color secondary_sidebar_backdrop_color #171717;
 
-@define-color card_bg_color #222222;
+@define-color card_bg_color #1c1c1c;
 
-@define-color item_border_color #3a3a3a;
-@define-color upcoming_bg_color #2d2d2d;
+@define-color item_border_color #303030;
+@define-color upcoming_bg_color #242424;
 @define-color upcoming_fg_color #f0f0f0;
 @define-color selected_color #2e3a46;
 
-@define-color headerbar_bg_color #181818;
+@define-color headerbar_bg_color #101010;
+
+@define-color accent_bg_color #3AAEA7;
+@define-color accent_fg_color #082725;
+@define-color accent_color #3AAEA7;
 
 :root {
-    --window-bg-color: #181818;
-    --view-bg-color: #181818;
-    --popover-bg-color: #202020;
-    --dialog-bg-color: #202020;
+    --window-bg-color: #101010;
+    --view-bg-color: #101010;
+    --popover-bg-color: #191919;
+    --dialog-bg-color: #191919;
 
-    --sidebar-bg-color: #1f1f1f;
-    --secondary-sidebar-bg-color: #1f1f1f;
+    --sidebar-bg-color: #171717;
+    --secondary-sidebar-bg-color: #171717;
 
-    /* Same inactive-sidebar fix for newer libadwaita CSS variables. */
-    --sidebar-backdrop-color: #1f1f1f;
-    --secondary-sidebar-backdrop-color: #1f1f1f;
+    --sidebar-backdrop-color: #171717;
+    --secondary-sidebar-backdrop-color: #171717;
 
-    --card-bg-color: #222222;
-    --headerbar-bg-color: #181818;
+    --card-bg-color: #1c1c1c;
+    --headerbar-bg-color: #101010;
+
+    --accent-bg-color: #3AAEA7;
+    --accent-fg-color: #082725;
+    --accent-color: #3AAEA7;
 }
 
 toast {
-    background-color: #303030;
-    border: 1px solid #3a3a3a;
+    background-color: #252525;
+    border: 1px solid #303030;
+}
+
+
+windowcontrols > button.close {
+    background-color: transparent;
+    background-image: radial-gradient(circle 8.5px at center, #E76A9B 98%, transparent 100%);
+    border-color: transparent;
+    box-shadow: none;
+}
+
+windowcontrols > button.close:hover {
+    background-color: transparent;
+    background-image: radial-gradient(circle 8.5px at center, #F392B7 98%, transparent 100%);
+    border-color: transparent;
+    box-shadow: none;
+}
+
+windowcontrols > button.close:active {
+    background-color: transparent;
+    background-image: radial-gradient(circle 8.5px at center, #CC5180 98%, transparent 100%);
+    border-color: transparent;
+    box-shadow: none;
+}
+
+windowcontrols > button.close:backdrop {
+    background-color: transparent;
+    background-image: radial-gradient(circle 8.5px at center, #D7799F 98%, transparent 100%);
+    border-color: transparent;
+    box-shadow: none;
+}
+
+windowcontrols > button.close > image {
+    color: transparent;
+    -gtk-icon-filter: opacity(0);
+    -gtk-icon-shadow: none;
 }
